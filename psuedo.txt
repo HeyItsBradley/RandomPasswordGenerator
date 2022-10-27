@@ -1,0 +1,19 @@
+make vars
+
+length: number between 8 and 128
+    if not return message saying password length must be bteween 8 and 128 characters
+
+character types(){
+    lowercase?
+    uppsercase?
+    numeric?
+    special characters?
+}
+
+MUST SELECT ATLEAST ONE CHARACTER types
+    if not return message saying(needs to have atelaset 1 option selected yest)
+
+if all peramaters are met{
+    generate password
+    display password
+}
