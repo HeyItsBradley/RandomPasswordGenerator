@@ -1,4 +1,6 @@
+//This functions will be called
 function generatePassword(){
+
 
 //These arrays will house the different characters that can be used
 var upperCaseArr =['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
@@ -50,17 +52,18 @@ console.log("This will show the whole list of avaiable characters depending on u
 //this sets a var finalPass to an empty array
 var finalPass = [];
 
-//    
+// 
 for (var i=0; i<wantedChar; i++){
    randomNum = Math.floor(Math.random() * selectedChar.length);
    finalPass = finalPass.concat(selectedChar[randomNum]);
   }
+//this is to see if finalPass can be logged
   console.log("final password is: " +finalPass); 
 
-  //Joins array       this makes it so that nothing is seperating the characters
-  finalPass = finalPass.join('');
-  //this will set the final password to the website
-  return finalPass;
+//Joins array       this makes it so that nothing is seperating the characters
+finalPass = finalPass.join('');
+//this will set the final password to the website
+return finalPass;
 }  
 
 //Assignment code
