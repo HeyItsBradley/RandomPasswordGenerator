@@ -17,7 +17,7 @@ var lowerCase = confirm('Do you want to use lowercase?');
 var upperCase = confirm("Do you want to use uppercase?");
 var numerica = confirm('Do you want to use numbers?');
 var specialChars = confirm('Do you want to use special characters?')
-
+//this runs for if the user does not confirm any of the prompts
 if(!lowerCase && !upperCase && !numerica && !specialChars){
   alert('You must select OK one atleast of the character types')
   return "Press button and try again"
@@ -51,7 +51,7 @@ console.log("This will show the whole list of avaiable characters depending on u
 var finalPass = [];
 
 //    
-for (var i=0; i<=wantedChar; i++){
+for (var i=0; i<wantedChar; i++){
    randomNum = Math.floor(Math.random() * selectedChar.length);
    finalPass = finalPass.concat(selectedChar[randomNum]);
   }
