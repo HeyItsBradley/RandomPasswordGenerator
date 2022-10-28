@@ -17,6 +17,11 @@ var lowerCase = confirm('Do you want to use lowercase?');
 var upperCase = confirm("Do you want to use uppercase?");
 var numerica = confirm('Do you want to use numbers?');
 var specialChars = confirm('Do you want to use special characters?')
+
+if(!lowerCase && !upperCase && !numerica && !specialChars){
+  alert('You must select OK one atleast of the character types')
+  return "Press button and try again"
+}
 //This will set selected characts to a blank array
 var selectedChar =[];
 
@@ -52,11 +57,11 @@ for (var i=0; i<=wantedChar; i++){
   }
   console.log("final password is: " +finalPass); 
 
+  //Joins array       this makes it so that nothing is seperating the characters
   finalPass = finalPass.join('');
-
+  //this will set the final password to the website
   return finalPass;
 }  
-
 
 //Assignment code
 var generateBtn = document.querySelector("#generate");
