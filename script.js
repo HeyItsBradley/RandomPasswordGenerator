@@ -52,7 +52,9 @@ console.log("This will show the whole list of avaiable characters depending on u
 //this sets a var finalPass to an empty array
 var finalPass = [];
 
-// 
+// itterates each time to add one.
+//creates a var called randomNum and uses math to make it select a random character from for the selected characters
+//then finalPass gets set to a concatinated string thats will be the users selected characters, then selects a random number position
 for (var i=0; i<wantedChar; i++){
    randomNum = Math.floor(Math.random() * selectedChar.length);
    finalPass = finalPass.concat(selectedChar[randomNum]);
